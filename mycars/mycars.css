@@ -6,7 +6,7 @@ a:hover { color:#B2B3B4; }
 html, body { min-height: 100% } 
 body { background-color:#FFFFFF; background: linear-gradient(to bottom, #004000, #FFFFFF); background-repeat: no-repeat; padding:0;  margin: 0; }
 .textstyle1 { text-align:left; }
-#heading_e4bf9ac { box-sizing: border-box; vertical-align: bottom; border-radius: 15px; position:relative; display: inline-block; width:1108px; height:88px; background:none; border: 4px solid #404040;  }
+#heading_e4bf9ac { position:absolute; left: 45%; top:2%; box-sizing: border-box; vertical-align: bottom; border-radius: 15px;display: inline-block; width:1108px; height:88px; background:none; border: 4px solid #404040;  }
 .textstyle2 { text-align:center;display: block }
 .textstyle3 { font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
 .textstyle4 { font-size:40pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
@@ -20,6 +20,6 @@ body { background-color:#FFFFFF; background: linear-gradient(to bottom, #004000,
 #container_5f0116bc { position:absolute; left:1%; top:339%; width:131%; min-height:410px; background:none;  }
 #container_5f0116bc_padding { margin: 10px; display: block;  }
 #img_499f9dd1 { vertical-align: bottom; position:relative; display: inline-block; width:100%; background:none;  }
-#heading_33e818a { position:absolute; left:35%; top:23%; width:517px; background:none; font-size:18pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:center;  }
+#heading_33e818a { position:absolute; left:45%; top:23%; width:517px; background:none; font-size:18pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:center;  }
 #heading_7912be8c { position:absolute; left:45%; top:173%; width:517px; height:54px; background:none; font-size:18pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:left;  }
-#heading_2aae4aae { position:absolute; left:41%; top:329%; width:517px; height:27px; background:none; font-size:18pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:left;  }
+#heading_2aae4aae { position:absolute; left:45%; top:329%; width:517px; height:27px; background:none; font-size:18pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF; text-align:left;  }
