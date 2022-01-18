@@ -6,7 +6,7 @@ a:hover { color:#B2B3B4; }
 html, body { min-height: 100% } 
 body { background-color:#FFFFFF; background: linear-gradient(to bottom, #004000, #FFFFFF); background-repeat: no-repeat; padding:0;  margin: 0; }
 .textstyle1 { text-align:left; }
-#heading_e4bf9ac {  position:absolute; left: 45%; top:2%; box-sizing: border-box; vertical-align: bottom; border-radius: 15px;display: inline-block; width:1108px; height:88px; background:none; border: 4px solid #404040;  }
+#heading_e4bf9ac {  position:absolute; left: 35%;  box-sizing: border-box; vertical-align: bottom; border-radius: 15px;display: inline-block; width:1108px; height:88px; background:none; border: 4px solid #404040;  }
 .textstyle2 { text-align:center;display: block }
 .textstyle3 { font-size:24pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
 .textstyle4 { font-size:40pt; font-family:Arial, Helvetica, sans-serif; color:#FFFFFF;  }
