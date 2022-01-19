@@ -4,7 +4,7 @@ a:visited { color:blue; }
 a:active { color:green; } 
 a:hover { color:violet; } 
 html, body { min-height: 100% } 
-body { background-color:#BCBCC8; background: linear-gradient(to bottom, #1717C4, #BCBCC8); background-repeat: no-repeat; padding:0;  margin: 0; }
+body { background-color:#F6FF99; background: linear-gradient(to bottom, #000000, #F6FF99); background-repeat: no-repeat; padding:0;  margin: 0; }
 
 
 h1 {
@@ -115,7 +115,7 @@ header {
  /*Button hover state*/
 button:hover
  {
-        background-color: #F44336; 
+        background-color: #BDFE72; 
     }
    
   
