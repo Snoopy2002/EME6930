@@ -1,4 +1,4 @@
-
+/*link formats*/
 a { color:red; } 
 a:visited { color:blue; } 
 a:active { color:green; } 
@@ -6,7 +6,7 @@ a:hover { color:violet; }
 html, body { min-height: 120% } 
 body { background-color:#5C755E; background: linear-gradient(to bottom, #5C755E, #9C9F84); background-repeat: no-repeat; padding:0;  margin: 0; }
 
- 
+/*header formats*/ 
 h1 {
 	font-family: LuxRoman, Verdana, sans-serif;
 	color:  #FFFFFF;
@@ -37,6 +37,7 @@ p {
 }
 
 
+/*containers and the flexbox formats*/
 #container {
 	position: relative;
 	background-color: #FFFDA6;
@@ -101,14 +102,14 @@ header {
 .button {
   background-color: #CFCBC4; 
   border-color: black;
-  border-radius: 4px;
+  border-radius: 2px;
   color: black;
-  padding: 0px 10px;
+  padding: 0px 8px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
   font-family:LuxRoman, Arial,sans-serif;
-  margin: 4px 2px;
+  margin: 2px 2px;
   transition-duration: 1s;
   cursor: pointer;
 }
@@ -118,8 +119,12 @@ button:hover
         background-color: #D8AB44; 
     }
    
+   /*allows rounded buttons*/
+   
 .button1 {
-border-radius: 4px;
+background-color: #CFCBC4; 
+border-radius: 8px;
+font-size:18px;
 }
   
 .flex-container {
