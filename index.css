@@ -3,7 +3,7 @@ a { color:red; }
 a:visited { color:blue; } 
 a:active { color:green; } 
 a:hover { color:violet; } 
-html, body { min-height: 120% } 
+html, body { min-height: 100% } 
 body { background-color:#5C755E; background: linear-gradient(to bottom, #5C755E, #9C9F84); background-repeat: repeat; padding:0;  margin: 0; }
 
 /*header formats*/ 
