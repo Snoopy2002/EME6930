@@ -11,8 +11,8 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
 
 .main-header .container {
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	/*align-items: center;*/
+	justify-content: flex-start;
 	flex-wrap: wrap;
     background-color: #CBE8BA;
     border-radius: 8px;
