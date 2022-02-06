@@ -21,16 +21,16 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
 }
 
 img {
-	width:40px;
-    height:40px;
+	width:60px;
+    height:60px;
 }
 
 h1{
 font-family: 'Roboto Slab', Times, Verdana, serif;
-font-size:20px;}
+font-size:30px;}
 
 span{
-font-size:10px;
+font-size:20px;
 font-family:'Merienda One', Verdana, serif;
 color:#1100FF;}
 
