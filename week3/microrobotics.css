@@ -3,7 +3,8 @@
 
 
 html, body { min-height: 100% } 
-body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7, #C0C0C0); background-repeat: repeat; padding:0;  margin: 10px auto; }
+body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7, #C0C0C0); background-repeat: repeat; padding:0;  margin: 10px auto;   max-width: 1300px;
+}
 :root {
   box-sizing: border-box;
 }
@@ -22,14 +23,6 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
 
 img {
 	max-width: 100%;
-	height: auto;
-}
-
-
-body {
-  margin: 0;
-  max-width: 1300px;
-  margin: 10px auto;
 }
 
 h1 {
