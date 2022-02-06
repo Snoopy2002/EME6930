@@ -70,7 +70,7 @@ color:#1100FF}
   }
   .main-header .container {
 		justify-content: flex-start;
-        flex-direction: row;
+        flex-direction: column;
 	}
 
   .box {
