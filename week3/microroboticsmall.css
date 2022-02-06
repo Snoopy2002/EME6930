@@ -4,17 +4,16 @@
 
 
 html, body { min-height: 100% } 
-body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7, #C0C0C0); background-repeat: repeat; padding:0;  margin: 10px auto;   max-width: 1300px;
-}
+body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7, #C0C0C0); background-repeat: repeat; padding:0;  margin: 10px auto;  }
 :root {
   box-sizing: border-box;
 }
 
 .main-header .container {
 	display: flex;
-	align-items: left;
-	justify-content: flex-start;
-	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
     background-color: #CBE8BA;
     border-radius: 8px;
     border: 2px solid rgb(116, 113, 113);
