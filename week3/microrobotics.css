@@ -12,11 +12,12 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
     background-color: #CBE8BA;
     border-radius: 8px;
     border: 2px solid rgb(116, 113, 113);
     margin: 10px;
+    padding:10px;
 }
 
 img {
@@ -27,7 +28,6 @@ img {
 
 body {
   margin: 0;
-  padding: 1rem;
   max-width: 1300px;
   margin: 10px auto;
 }
@@ -45,32 +45,34 @@ color:#1100FF}
 .container {
   display: flex;
   width: 100%;
+  padding:10px;
 }
 
 .column-1 {
-  flex-shrink: 0; /* shrinks to 0 to apply 70% width*/
-  flex-basis: 30%; /* sets initial width to 70%*/
+  flex-shrink: 0; /* shrinks to 0 to apply 30% width*/
+  flex-basis: 30%; /* sets initial width to 30%*/
 }
 
 
 .box {
   background-color: rgb(245, 215, 160);
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 8px;
   border: 2px solid rgb(116, 113, 113);
-  margin: 20px;
-  box-shadow: 1px 1px 1px #000;
+  margin: 5px;
+  /*box-shadow: 1px 1px 1px #000;*/
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
   .main-header .container {
 		justify-content: space-between;
+        flex-direction: column;
 	}
 
   .box {
-    margin: 0 0 1rem;
+    /*margin: 0 0 1rem;*/
   }
 }
