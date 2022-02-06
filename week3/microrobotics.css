@@ -60,7 +60,7 @@ align=center;}
   /*box-shadow: 1px 1px 1px #000;*/
 }
 
-@media screen and (max-width: 600px) 
+/*@media screen and (max-width: 600px) 
 {
 
   h1{ font-family: 'Roboto Slab', Times, Verdana, serif; font-size:30px;}
@@ -79,6 +79,6 @@ align=center;}
 	}
 
   .box {
-    /*margin: 0 0 1rem;*/
-  }
+    /*margin: 0 0 1rem;
+  }*/
   
