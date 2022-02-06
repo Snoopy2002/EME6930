@@ -55,11 +55,11 @@ align=center;}
 .box {
   background-color: rgb(245, 215, 160);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 7px;
   border: 2px solid rgb(116, 113, 113);
   margin: 5px;
   /*box-shadow: 1px 1px 1px #000;*/
-}
+ }
 
 /*@media screen and (max-width: 600px) {
   .container {
