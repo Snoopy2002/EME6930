@@ -12,7 +12,7 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
 
 .main-header .container {
 	display: flex;
-	align-items: center;
+	align-items: left;
 	justify-content: space-around;
 	flex-wrap: wrap;
     background-color: #CBE8BA;
