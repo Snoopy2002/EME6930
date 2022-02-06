@@ -44,6 +44,7 @@ color:#1100FF}
 
 .container {
   display: flex;
+  flex-direction:row:
   width: 100%;
   padding:10px;
 }
@@ -69,7 +70,7 @@ color:#1100FF}
   }
   .main-header .container {
 		justify-content: flex-start;
-        flex-direction: column;
+        flex-direction: row;
 	}
 
   .box {
