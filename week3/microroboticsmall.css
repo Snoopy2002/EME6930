@@ -76,34 +76,3 @@ color:#1100FF;}
   cursor: pointer;
   border-radius:100%;
 }
-
-@media only screen and (max-width: 600px) {
-		#robotvideo { display: none; }   /*. hide video on mobile screens*/
-	}
-/*@media screen and (max-width: 600px) {
-  .container {
-    flex-direction: row;
-  }
-  .main-header .container {
-		justify-content: flex-start;
-        flex-direction: column;
-	}
-
-  .box {
-    /*margin: 0 0 1rem;
-  }
-  
- @media screen and (max-width: 1300px) {
-  .container {
-    flex-direction: row;
-  }
-  .main-header .container {
-		justify-content: flex-start;
-        flex-direction: column;
-	}
-    
-
-  .box {
-    /*margin: 0 0 1rem;
-  }
-}*/
