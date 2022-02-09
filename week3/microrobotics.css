@@ -47,12 +47,15 @@ align=center;}
   flex-direction:row;
   width: 100%;
   padding:10px;
+  justify-content:center;
+
 }
 
 .column-1 {
   flex-shrink: 0; /* shrinks to 0 to apply 30% width*/
   flex-basis: 60%; /* sets initial width to 30%*/
-}
+  
+  }
 
 
 .box {
@@ -64,7 +67,7 @@ align=center;}
   /*box-shadow: 1px 1px 1px #000;*/
 }
 
-.imgspc{margin-top:10px;margin-bottom:10px;margin-left:10px;margin-right:10px;}
+.imgspc{margin-top:10px;margin-bottom:20px;margin-left:20px;margin-right:10px;}
 
 /*@media screen and (max-width: 600px) 
 {
