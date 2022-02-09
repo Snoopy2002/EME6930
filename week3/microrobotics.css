@@ -47,7 +47,7 @@ align=center;}
   flex-direction:row;
   width: 100%;
   padding:10px;
-  justify-content:center;
+  justify-content:space-around;
 
 }
 
@@ -67,7 +67,7 @@ align=center;}
   /*box-shadow: 1px 1px 1px #000;*/
 }
 
-.imgspc{margin-top:10px;margin-bottom:20px;margin-left:20px;margin-right:10px;}
+.imgspc{width:300px; height:300px; margin-top:10px;margin-bottom:20px;margin-left:20px;margin-right:10px;}
 
 /*@media screen and (max-width: 600px) 
 {
