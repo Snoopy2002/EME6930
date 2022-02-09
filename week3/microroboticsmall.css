@@ -29,6 +29,11 @@ h1{
 font-family: 'Roboto Slab', Times, Verdana, serif;
 font-size:30px;}
 
+
+h3{
+font-family: 'Roboto Slab', Times, Verdana, serif;
+font-size:20px;}
+
 span{
 font-size:20px;
 font-family:'Merienda One', Verdana, serif;
@@ -43,7 +48,7 @@ color:#1100FF;}
 
 .column-1 {
   flex-shrink: 0; /* shrinks to 0 to apply 30% width*/
-  flex-basis: 30%; /* sets initial width to 30%*/
+  flex-basis: 60%; /* sets initial width to 30%*/
 }
 
 
