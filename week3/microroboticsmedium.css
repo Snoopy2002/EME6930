@@ -57,7 +57,7 @@ color:#1100FF;}
 
 
 .box {
-  background-color: #FFCE6D;
+  background-color: #FFCE6D; /*the flexbox color*/
   padding: 5px;
   border-radius: 7px;
   border: 2px solid black;

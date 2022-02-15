@@ -72,7 +72,7 @@ align=center;}
 
 
 .box {
-  background-color: #C9E3FF;
+  background-color: #C9E3FF; /*the flexbox color*/
   padding: 10px;
   border-radius: 8px;
   border: 5px solid black;
