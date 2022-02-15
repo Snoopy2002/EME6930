@@ -54,7 +54,7 @@ color:#1100FF;}
   flex-basis: 60%; /* sets initial width to 30%*/
 }
 
-
+/*flexbox css settings*/
 .box {
   background-color: #F5D7A0; /*the flexbox color*/
   padding: 5px;
@@ -64,8 +64,10 @@ color:#1100FF;}
   /*box-shadow: 1px 1px 1px #000;*/
  }
  
+ /*for space between images*/
  .imgspc{padding:10px;}
 
+ /*button setting*/
  .button {
   background-color: #FAFEC0;
   border: double;
@@ -80,7 +82,7 @@ color:#1100FF;}
   border-radius:100%;
 }
 
-
+/*responsive settings for the youtube video*/
 .iframe-container{
   position: relative;
   width: 100%;
