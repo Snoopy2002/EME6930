@@ -3,38 +3,42 @@
 
 
 html, body { min-height: 100% } 
-body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7, #C0C0C0); background-repeat: repeat; padding:0;  margin: 10px auto;   max-width: 1300px;
+body { background-color:#FBFFCC; background: linear-gradient(to bottom, #FBFFCC, #C0C0C0); background-repeat: repeat; padding:0;  margin: 20px auto;  /* max-width: 1300px;*/
 }
-:root {
+
+#root {
   box-sizing: border-box;
 }
 
 .main-header .container {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-    background-color: #CBE8BA;
-    border-radius: 8px;
-    border: 2px solid rgb(116, 113, 113);
-    margin: 5px;
-    padding:5px;
+    background-color: #388502;
+    border-radius: 20px;
+    border: 5px solid black;
+    /*margin: 5px;*/
+    padding:10px;
 }
 
 img {
-	width:200px;
-    height:200px;
+	width:210px;
+    height:210px;
 }
 
 h1{
 font-family: 'Roboto Slab', Times, Verdana, serif;
 font-size:80px;
-align=center;
+align:center;
 }
 
-h3{
+/*h3{
 font-family: 'Roboto Slab', Times, Verdana, serif;
-font-size:40px;}
+font-size:10px;}*/
+
+p{padding-top:5px; padding-bottom:10px; font-size:15px; color:blue }
+
 
 span{
 font-size:50px;
@@ -42,42 +46,51 @@ font-family:'Merienda One', Verdana, serif;
 color:#1100FF;
 align=center;}
 
+
+.txtdiv {
+  color:blue;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
 .container {
   display: flex;
   flex-direction:row;
   width: 100%;
   padding:10px;
-  justify-content:space-around;
+  justify-content:space-evenly;
 
 }
 
 .column-1 {
   flex-shrink: 0; /* shrinks to 0 to apply 30% width*/
-  flex-basis: 40%; /* sets initial width to 30%*/
+  flex-basis: 60%; /* sets initial width to 30%*/
   
-  }
+    }
 
 
 .box {
-  background-color: rgb(245, 215, 160);
+  background-color: #C9E3FF;
   padding: 10px;
   border-radius: 8px;
-  border: 2px solid rgb(116, 113, 113);
+  border: 5px solid black;
   margin: 5px;
   /*box-shadow: 1px 1px 1px #000;*/
 }
 
-.imgspc{margin-top:10px;margin-bottom:20px;margin-left:20px;margin-right:10px;}
+.imgspc{padding:20px;}
 
 
  .button {
   background-color: #FAFEC0;
-  border: none;
+  border: double;
   color: black;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 40px;
   margin: 10px 10px;
   cursor: pointer;
   border-radius:100%;
@@ -87,7 +100,7 @@ align=center;}
 .iframe-container{
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 60%; 
   height: 0;
 }
 .iframe-container iframe{
