@@ -1,0 +1,553 @@
+a { color:#5D5D9E; } 
+a:visited { color:#C0C0C0; } 
+a:active { color:#00FFFF; } 
+a:hover { color:#FFFFFF; } 
+h1{font-family: Tahoma, Times; color:#00B33C;}
+h2{font-family: Tahoma, Times; color:#FFFFFF; }
+h3{font-family: Tahoma, Times; color:#00B33C; }
+
+@font-face{
+font-family:"RomanFonts";
+srcurl('/fonts/spqr.otf') format('truetype');
+ }
+ 
+#banner {
+	height: 120px;
+	background-color: #FFF7D5;
+    background-size: 100%;
+    width: 114%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/*first button*/
+.dropdown {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:10px; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*second button*/
+.dropdown2 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:180px; 
+}
+.dropdown2-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown2:hover .dropdown2-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown2-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown2-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown2-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*third button*/
+.dropdown3 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:350px; 
+}
+.dropdown3-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown3:hover .dropdown3-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown3-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown3-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown3:hover .dropdown3-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown3:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*first button*/
+.dropdown4 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:480px; 
+}
+.dropdown4-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown4:hover .dropdown4-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown4-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown4-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown4:hover .dropdown4-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown4:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*first button*/
+.dropdown5 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:630px; 
+}
+.dropdown5-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown5:hover .dropdown5-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown5-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown5-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown5:hover .dropdown5-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown5:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*first button*/
+.dropdown6 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:780px; 
+}
+.dropdown6-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown6:hover .dropdown6-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown6-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown6-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown6:hover .dropdown6-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown6:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*7th button*/
+.dropdown7 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:930px; 
+}
+.dropdown7-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown7:hover .dropdown7-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown7-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown7-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown7:hover .dropdown7-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown7:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*8thbutton*/
+.dropdown8 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:1080px; 
+}
+.dropdown8-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown8:hover .dropdown8-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown8-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown8-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown8:hover .dropdown8-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown8:hover .dropbtn {
+  background-color: #000000;
+}
+
+
+
+
+
+/*9th button*/
+.dropdown9 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:1400px; 
+}
+.dropdown9-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown9:hover .dropdown9-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown9-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown9-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown9:hover .dropdown9-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown9:hover .dropbtn {
+  background-color: #000000;
+}
+
+/*10th button*/
+
+.dropdown10 {
+  display: inline-block;
+  position:absolute; width:160px; height:80px; left:1230px; 
+}
+.dropdown10-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-size:14px;
+}
+.dropdown10:hover .dropdown10-content {
+  display: block;
+  color: #FFFFFF
+}
+.dropdown10-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown10-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown10:hover .dropdown9-content {
+  display: block;
+}
+
+
+
+
+
+
+body {  padding:0;  margin: 0; color:#00B33C;}
+
+/*Youtube video formatting*/
+
+#youtube2 { box-sizing: border-box; position:absolute; left:37%; top:39%; width:42%; height:235px; background-color:#D1D1D1; border: 5px solid #A0A0A0; box-shadow: 10px 5px 4px 0px rgba(110, 36, 129, 0.588235);  }
+
+/*textstyles*/
+.textstyle1 { text-align:center; }
+.textstyle3 { text-align:center; }
+.textstyle4 { font-size:20pt; font-family:Tahoma, Times, sans-serif; color:#336600; font-weight:bold;  }
+.textstyle6  { font-size:16pt; font-family:Tahoma, Times, sans-serif; color:#336600; font-weight:bold;  }
+.textstyle7 { font-size:50pt; font-family:RomanFonts; color:#3366ff;  }
+.textstyle8 { font-size:16pt; font-family:Tahoma,TImes, sans-serif; color:#FFFFFF; text-align:left }
+.textstyle9 { font-size:22pt; font-family:Tahoma,Times, sans-serif; color:#000000;  white-space: nowrap; }
+
+/*table formatting*/
+#table_1b6faec5 th { border: 1px solid #000000;  } 
+#table_1b6faec5 td { border: 1px solid #000000;  } 
+#table_1b6faec5 { box-sizing: border-box; border-radius: 15px; border-collapse:collapse; position:absolute; left:34%; top:108%; width:47%; height:2310px; background-color:#FFFFFF; border: 1px solid #000000; table-layout: fixed;  }
+#cell_14714d46 {  }
+#cell_69c78b0a {  }
+#cell_7a80750b {  }
+#cell_b404f9c {  }
+#cell_6a7bbee8 {  }
+#cell_5e45c283 {  }
+#cell_68fc1c65 {  }
+#cell_2a5034ab {  }
+#cell_5526d82f {  }
+#cell_22d9e89a {  }
+#cell_356ad6d7 {  }
+#cell_5aadfb99 {  }
+#cell_4f89c297 {  }
+#cell_55c6bb89 {  }
+#cell_6990e6f8 {  }
+#cell_d28b6b8 {  }
+#cell_2ba39bff {  }
+#cell_126cc6b5 {  }
+#cell_32675b5d {  }
+#cell_55235b83 {  }
+#cell_7894e7cd {  }
+#cell_558f1a39 {  }
+#cell_5efb839b {  }
+#cell_4365d317 {  }
+#cell_15a6cc0e {  }
+#cell_15054823 {  }
+#cell_4ba7bea6 {  }
+#cell_23e78b93 {  }
+#cell_21012002 {  }
+#cell_26fb9b04 {  }
+#cell_71ab4cf8 {  }
+#cell_114fb848 {  }
+#cell_33ccfd27 {  }
+#cell_63ddebe7 {  }
+#cell_27960a10 {  }
+#cell_55674728 {  }
+
+/*page text placements*/
+#text_2109bf05 { position:absolute; left:32%; top:20%; background:none;  }
+#text_2b21313a { position:absolute; left:98%; top:59%; background:none;  }
+#text_263f8a00 { position:absolute; left:36%; top:90%; background:none;  }
+#text_1c1a24f4 { position:absolute; left:38%; top:83%; width:537px; height:75px; background:none;  }
+
+/*image placements, left*/
+#a1 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:38%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a2 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:92%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a3 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:146%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a4 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:199%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a5 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:309%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a6 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:254%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a7 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:364%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a8 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:419%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a9 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:472%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a20 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:525%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a21 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:578%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a22 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:631%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a23 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:684%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a24 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:737%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a25 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:790%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a26 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:843%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a27 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:896%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a28 { box-sizing: border-box; border-radius: 10px; position:absolute; left:3%; top:949%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+/*image placement, center*/
+#a10 { box-sizing: border-box; border-radius: 10px; position:absolute; left:43%; top:472%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a39  { box-sizing: border-box; border-radius: 10px; position:absolute; left:43%; top:540%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a38 { box-sizing: border-box; border-radius: 10px; position:absolute; left:43%; top:618%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a37 { box-sizing: border-box; border-radius: 10px; position:absolute; left:43%; top:700%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a36 { box-sizing: border-box; border-radius: 10px; position:absolute; left:43%; top:810%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+
+
+/*image placements, right*/
+#a11 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:37%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a12 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:94%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a13 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:200%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a14 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:145%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a15 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:251%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a16 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:307%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a17 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:419%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a18 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:360%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a19 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:472%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a29 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:525%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a30 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:588%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a31 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:681%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a32 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:784%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a33 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:847%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a34 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:910%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+#a35 { box-sizing: border-box; border-radius: 10px; position:absolute; left:84%; top:973%; width:27%; background:none; border: 10px solid #FFFFFF;  }
+
+
+
+#jscontaineroutput { position:absolute; left:3%; top:1050%; width:100%; min-height:155px; background-color:#DFE0E0;  }
+#jscontainerpadding { margin: 5px; display: block;  }
+
+#container_73996d52 { position:absolute; left:3%; top:1100%; width:100%; min-height:155px; background-color:#000000;  }
+#container_73996d52_padding { margin: 5px; display: block;  }
+
