@@ -78,7 +78,19 @@ align=center;}
   /*box-shadow: 1px 1px 1px #000;*/
 }
 
-.imgspc{padding:20px;}
+/*setup for pictures*/
+
+.imgspc1{padding:20px;}
+.imgspc2{padding:20px;}
+.imgspc3{padding:20px;}
+.imgspc4{padding:20px;}
+.imgspc5{padding:20px;}
+.imgspc6{padding:20px;}
+.imgspc7{padding:20px;}
+.imgspc8{padding:20px;}
+.imgspc9{padding:20px;}
+
+
 
 /*button settings*/
  .button {
