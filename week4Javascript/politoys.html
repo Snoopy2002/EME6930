@@ -10,7 +10,7 @@
 	
 	
 </head>
-<body style="background-color:#000000";>
+<body style="background-color:#000000">
 <div id="banner">
  <div class="dropdown">
   <button class="dropbtn">Vintage Diecast</button>
@@ -456,6 +456,17 @@
 	 var elem2; //for displaying the picture number and that it will be opened in a new window
 	 var elem3; //to display image link that will appear in popup window
 	 
+	 function convertbackground() //randomly changes background coloration
+	 {
+	     var min = Math.ceil(0);
+         var max = Math.floor(16777216);
+         var color = Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+		 var hexstring = color.toString(16);
+		 console.log(hexstring);
+		 document.body.style.backgroundColor = "#"+hexstring;
+
+	 }
+	 
 	 
 	 function openimage(imageid)  //displays the image in popup
 	 {
@@ -495,6 +506,7 @@
 	   elem.innerHTML += "<h3>You made an error in picture number selection, no image displayed in a separate window.</h3>";
 	 }
 	 counttablerowsandcolumns(); //call the function
+	 convertbackground()
 	 
 	 
 	 
