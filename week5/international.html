@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+	
+    <title>Welcome to International Schools USA</title> <!--This loads the appropriate style sheets accoding to screen size-->
+	  <link rel="stylesheet" type="text/css" href="international.css">
+    
+	  <!--Google Font Additions-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+
+<script>
+function schoolinfo(id) {
+    var elem = document.getElementsByClassName("column-3 box");
+	switch(id)
+	{
+	   case 0:
+	   	  elem[0].innerHTML = "<p>ABC K-5 offers personalized instruction with small class sizes and we will accept students as long as we have space.  An important part of the curriculum is early introduction to computing using the Scratch programming language. Starting in 4th grade parents will have the option of selecting a Scratch coding class in substitution for a traditional elective such as art or music.  To apply you may send an application form via email to the mailto link on our page. Traditional course progression includes English, science, math, history, and social studies.</p>";
+          break;
+	   case 1:
+	      elem[0].innerHTML = "<p>ABC 6-8 continues the educational program in ABC K-5.   Accelerated math students will have the option of enrollment in Algebra 1 or Algebra 1 Honors starting in 7th grade.  Geometry/Geometry Honors is an option for 8th grade students that complete 7th grade Algebra 1.  To apply you may send an application form via email to the mailto link on our page.   If your child did not attend ABC K-5 a recommendation letter from a prior teacher or school administrator is required.  Computer coding in Scratch is a mandatory course for Grades 6-8 students.</p>";
+	      break;
+	   case 2:
+	   	  elem[0].innerHTML = "<p>ABC 9-12 Technical offers a traditional program with math through Financial Math.  Emphasis is on job training, and we offer several technical certification programs in replacement of the typical IB/AP college preparatory work.  To apply you may send an application form via email to the mailto link on our page.   If your child did not attend ABC 6-8 a recommendation letter from a prior teacher or school administrator is required.  Computer programming using Javascript and html is a mandatory course for Grades 9-12 students at ABC Technical.  Students may at their discretion take a certification exam at the end of our 3 year program.</p>";
+          break;
+	   case 3:
+	   	  elem[0].innerHTML = "<p>ABC 9-12 Prep is a full college preparatory program that offers a number of AP courses (AP English Language, AP US History, AP US Government, AP World History, AP Calculus AB, AP Statistics, AP Computer Science Principles, AP Biology, AP Chemistry, and AP Environmental Science, AP Physics 1 and IB Computer Science and IB Biology.  3 years of computer programming in Python is mandatory.</p>";
+		  break;
+	   case 4:
+	   	  elem[0].innerHTML = "<p>DEF Technical High School offers similar options to ABC Technical with several other programs in addition. Contact them at their email for more information.  </p>";
+     	  break;
+	   case 5:
+	   	  elem[0].innerHTML = "<p>Bytes Computer School is a technical school offers special technical training in robotics and programming along with additional mathematics coursework for high school graduates.  More information can be obtained by emailing them.</p>";
+          break;
+    }
+ }<!--end fn-->
+</script>
+
+  </head>
+<body>
+
+
+
+	<div class="header-container">
+	    <h2>Welcome to ABC International Schools</h2>
+	    <img class="headerimg" src="images/internationalschools.jpg" alt="company logo">
+    </div>
+
+
+  
+<div class="container">
+   <center>   
+   <div class="column-1 box">
+	  <h3>On the following form please enter the requested information for your child.</h3><br>
+      <form action="international.php" method="get">
+        <label for="fname"><b>First Name:</b></label>
+        <input type="text" id="fname" name="fname" value="firstname"><br>
+        <label for="lname"><b>Last Name:</b></label>
+        <input type="text" id="lname" name="lname" value="lastname"><br>
+		<label for="age"><b>Student Age:</b></label>
+        <input type="text" id="age" name="age" value="0"><br>
+        <label for="gender"><b>Gender:</b></label>
+        <input type="text" id="gender" name="gender" value="F/M"><br>
+		<label for="email"><b>Parent Email Address:</b></label>
+        <input type="text" id="email" name="email" value=""><br>
+		<input type="submit">
+      </form>
+	  <br>
+	  
+	  <form>
+        <H3>Select the school for which you want to add your child to the wait list. Buttons below provide more information on each of our schools.</H3><br>
+      <select id="schoolchoice">
+        <option>ABC K-5</option>
+        <option>ABC 6-8</option>
+        <option>ABC 9-12 Technical</option>
+        <option>ABC 9-12 Prep</option>
+		<option>DEF Technical High School (an affiliated ABC Partner)</option>
+		<option>Bytes Computer School (an affiliated ABC Partner) </option>
+      </select>
+        <input class="button1" onclick="" value="Choose a School">
+     </form>
+	 
+   </div> <!--end box 1-->
+	  
+      <div class="column-2 box">
+	    <H3>Information on our schools</H3><br>
+	    <button class="button0" onclick="schoolinfo(0)">ABC K-5</button>
+        <button class="button0" onclick="schoolinfo(1)">ABC 6-8</button>
+        <button class="button0" onclick="schoolinfo(2)">ABC 9-12 Technical</button>
+		<button class="button0" onclick="schoolinfo(3)">ABC 9-12 Prep</button>
+        <button class="button0" onclick="schoolinfo(4)">DEF Technical HS</button>
+        <button class="button0" onclick="schoolinfo(5)">Bytes Computer School</button>
+      <!-- <div class="iframe-container"> <!--responsive youtube video link
+		<iframe width="710" height="320" src="https://www.youtube.com/embed/FufNSxoNmtA" title="Microrobotics Microlite" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+	  </div> <!--end box 2-->
+	  </center>
+	  
+	  
+	   <div class="column-3 box"> <!--for output of school information-->
+	     
+	   </div>
+  
+</div>
+
+<footer>
+  <center>
+  Author: Giancarlo Fruzzetti
+  <a href="mailto:gfruzzetti@usf.edu">My email</a>
+  </center>
+</footer>
+  </body>
+</html>
