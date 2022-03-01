@@ -1,11 +1,17 @@
-<!DOCTYPE html>
+<!--Page should be for some sort of school and contain a form for parents to put their child on a waiting list.
+The form will have entry boxes for the student name, age , gender, and their upcoming grade.
+It should also have a drop down selector for which school the child will be on a waiting list.
+There should be buttons for 4-6 different schools and each button should call a function that displays the information about the school within a container division on the page as in the week 4 project.
+The page should be designed to be responsive.-->
+
+
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
 	
-    <title>Welcome to International Schools USA</title> <!--This loads the appropriate style sheets accoding to screen size-->
-	  <link rel="stylesheet" type="text/css" href="international.css">
+    <title>Welcome to International Schools USA</title> 
+    <link rel="stylesheet" type="text/css" href="international.css">
     
 	  <!--Google Font Additions-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
-<script>
+<script> <!--provides information on schools when user clicks on the correct button for the school-->
 function schoolinfo(id) {
     var elem = document.getElementsByClassName("column-3 box");
 	switch(id)
@@ -56,7 +62,7 @@ function schoolinfo(id) {
   
 <div class="container">
    <center>   
-   <div class="column-1 box">
+   <div class="column-1 box">  <!--holds the form fields and submit button which stores this information, this is processed by the php file-->
 	  <h3>On the following form please enter the requested information for your child.</h3><br>
       <form action="international.php" method="get">
         <label for="fname"><b>First Name:</b></label>
@@ -73,7 +79,7 @@ function schoolinfo(id) {
       </form>
 	  <br>
 	  
-	  <form>
+	  <form> <!--second form with drop down boxes for the school-->
         <H3>Select the school for which you want to add your child to the wait list. Buttons below provide more information on each of our schools.</H3><br>
       <select id="schoolchoice">
         <option>ABC K-5</option>
@@ -88,7 +94,7 @@ function schoolinfo(id) {
 	 
    </div> <!--end box 1-->
 	  
-      <div class="column-2 box">
+      <div class="column-2 box">  <!--the school information buttons-->
 	    <H3>Information on our schools</H3><br>
 	    <button class="button0" onclick="schoolinfo(0)">ABC K-5</button>
         <button class="button0" onclick="schoolinfo(1)">ABC 6-8</button>
