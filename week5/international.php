@@ -1,6 +1,6 @@
 <html>
 <body>
-PHP output<br> //php file to process variables on form blanks.
+PHP output<br>
 Student First Name: <?php echo $_GET["fname"]; ?><br>
 Student Last Name: <?php echo $_GET["lname"]; ?><br>
 Student Age: <?php echo $_GET["age"]; ?><br>
