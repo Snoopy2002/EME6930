@@ -19,6 +19,22 @@ body { background-color:#000000; background: linear-gradient(to bottom, #000000,
     padding:5px;
 }
 
+/* unvisited link */
+a:link {
+  color: green;
+  font-size:30px;
+  font-style:italic;
+}
+
+/* visited link */
+a:visited {
+  color: brown;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
 
 h2{ /*h2 heading settings*/
 font-family:  Times, Verdana, serif;
