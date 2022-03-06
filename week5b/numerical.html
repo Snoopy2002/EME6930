@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+	
+    <title>Numerical Integral Calculator</title> <!--This loads the appropriate style sheets accoding to screen size-->
+	  <link rel="stylesheet" type="text/css" href="numerical.css">
+    <script>
+     var x = 0;
+     var array = Array();
+	 
+	 function cleardata()
+	 {
+	   	   document.location.reload(true); <!--reloads document to ensure array is cleared to enter data-->
+     }
+
+    function add_element_to_array()
+    {
+	 array[x] = document.getElementById("yvalues").value;
+ 	 alert("Element: " + array[x] + " Added at index " + x);
+ 	 x++;
+     document.getElementById("yvalues").value = "";
+    } <!--end function-->
+
+	function display_and_calculate()
+	{
+ 	   var e = "<hr/>";   
+	   var elem = document.getElementsByClassName("column-2 box");
+	   var elem2 = document.getElementsByClassName("column-3 box");
+       var righttotal=0;
+	   var lefttotal=0;
+	   var trapezoidal=0;
+	   var aelement = document.getElementById("lowerlimit");
+	   var belement = document.getElementById("upperlimit");
+	   var nelement = document.getElementById("subdivisions");
+	   var a = aelement.value;
+	   var b = belement.value;
+	   var n = nelement.value;
+	   var deltax=0;
+    
+       for (var y=0; y<array.length; y++) <!--displays the y values of the function-->
+	    {
+       e += "y value " + y + " = " + array[y] + "<br/>";
+	      }
+		  
+     elem[0].innerHTML = e;
+     deltax=(parseFloat(b)-parseFloat(a))/parseFloat(n);
+     for (let i = 0; i < array.length-1; i++)
+	   {  <!--calculates left sum-->
+	   
+         lefttotal += parseFloat(array[i]);
+        }
+		lefttotal=lefttotal*deltax;
+	for (let i = 1; i < array.length; i++)
+	   {  <!--calculates right sum-->
+         righttotal += parseFloat(array[i]);
+        }
+		righttotal=righttotal*deltax;
+	for (let i = 0; i < array.length; i++) 
+	{<!--calculates trapezoidal sum--> 
+	     if (i==0 || i==array.length)
+		 {trapezoidal += parseFloat(array[i]);} <!--xi-->
+		 else
+		  {trapezoidal += 2*parseFloat(array[i]);} <!--2*xi-->
+		  
+    }
+	trapezoidal=trapezoidal*deltax*0.5;
+    elem2[0].innerHTML=" Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  left sum: " + lefttotal + "  right sum: " + righttotal + "  trapezoidal: " + trapezoidal + "<n/>";
+    <!--above line displays the limits, subdivisions and the sums-->
+   
+ } <!--end function-->
+
+</script>
+
+</head>
+<body>
+
+
+
+	<div class="header-container">
+	    <h2>Numerical Integral Calculator</h2>
+    </div>
+
+
+  
+<div class="container"> <!--data inputs for integral-->
+   <center>   
+   <div class="column-1 box">
+	  <h3>In the following fields please enter the upper limit a, lower limit b, subdivisions n, and y-values of the function.</h3><br>
+	    <label for="upperlimit"><b>Upper limit:</b></label>
+        <input type="text" id="upperlimit" name="upperlimit" value="0"></input><br>
+        <label for="lowerlimit"><b>Lower limit:</b></label>
+        <input type="text" id="lowerlimit" name="lowerlimit" value="0"></input><br>
+		<label for="subdivisions"><b>Number of subdivisions:</b></label>
+        <input type="text" id="subdivisions" name="subdivisions" value="0"></input><br>
+        <label for="yvalues"><b>yvalues of function:</b></label>
+        <input type="text" id="yvalues"></input>
+        <input type="button" id="button1" value="Add values" onclick="add_element_to_array();"></input></br></br> <!--input array-->
+        <input type="button" id="button2" value="Display values and calculate integral" onclick="display_and_calculate();"></input> <!--input limits and divisions-->
+		<input type="button" id="button3" value="Clear" onclick="cleardata();"></input> <!--clear form-->
+	  <br>
+	  
+   </div> <!--end box 1-->
+	  
+      <div class="column-2 box">
+	  <H3>y-values are: </H3>
+	   
+	  </div> <!--end box 2-->
+	  
+	  <div class="column-3 box">
+	  <H3>Total of the integral is: </H3>
+	  
+	  </div>
+	  </center>
+	  
+	  
+  
+</div>
+
+<footer>
+  <center>
+  Author: Giancarlo Fruzzetti 3/2022
+  <a href="mailto:gfruzzetti@usf.edu">My email</a>
+  </center>
+</footer>
+  </body>
+</html>

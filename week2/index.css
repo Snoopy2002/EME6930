@@ -190,3 +190,6 @@ font-size:20px;
     padding:5px 10px;
     background:#cc9;
 }
+#footer p {
+    margin:0;
+}

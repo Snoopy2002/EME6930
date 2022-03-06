@@ -1,0 +1,87 @@
+/*main css file for large screen sizes*/
+
+html, body { min-height: 100% } /*body settings*/
+body { background-color:#000000; background: linear-gradient(to bottom, #000000, #FFFFFF); background-repeat: repeat; padding:0;  margin: 20px auto;  /* max-width: 1300px;*/
+}
+
+#root {
+  box-sizing: border-box;
+}
+
+.header-container {  /*header container settings*/
+	display: flex;
+	align-items: left;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+    background-color: transparent;
+    border-radius: 5px;
+    /*margin: 5px;*/
+    padding:5px;
+}
+
+
+h2{ /*h2 heading settings*/
+font-family:  Times, Verdana, serif;
+font-size:40px;
+align:center;
+color:#FF8F00;
+}
+
+h3{ /*h3 header settings*/
+font-family: Times, Verdana, serif;
+font-size:30px;
+color:#0828E4;}
+
+p{padding-top:5px; padding-bottom:5px; font-size:35px; color:#1E2EDA; font-weight:bolder; }
+
+
+span{
+font-size:50px;
+font-family:'Merienda One', Verdana, serif;
+color:#1100FF;
+align=center;}
+
+/*
+.txtdiv {
+  color:blue;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}*/
+
+.container { /*sets basic parameters for the flexbox container*/
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  width: 100%;
+  padding:10px;
+  justify-content:space-between;
+
+}
+
+.column-1{  /*format of container 1 which has the form*/
+  width:100%;
+  height:60%;  
+    }
+    
+.column-2{ /*container 2 which has the buttons to get school information*/
+width:100%;
+  height:30%;
+ }
+ 
+ .column-3{
+ width:100%;
+ height:10%; }
+ 
+/*the flexbox settings*/
+.box {
+  background-color: #E9E9EE; /*the flexbox color*/
+  padding: 10px; /*flexbox padding*/
+  border-radius: 20px; /*roundness of corners*/
+  border: 2px solid black; /*size of border and oclor*/
+  margin: 5px;
+  box-shadow: 10px 10px 10px #000;
+}
+
+}

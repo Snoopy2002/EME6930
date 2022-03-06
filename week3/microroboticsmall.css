@@ -9,7 +9,7 @@ body { background-color:#FFF1D7; background: linear-gradient(to bottom, #FFF1D7,
   box-sizing: border-box;
 }
 
-.main-header .container {
+.main-header .container {/*header container settings*/
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -64,8 +64,18 @@ color:#1100FF;}
   /*box-shadow: 1px 1px 1px #000;*/
  }
  
- /*for space between images*/
- .imgspc{padding:10px;}
+/*setup for pictures*/
+
+.imgspc1{padding:20px;}
+.imgspc2{padding:20px; display:none;}
+.imgspc3{padding:20px; display:none;}
+.imgspc4{padding:20px;}
+.imgspc5{padding:20px;}
+.imgspc6{padding:20px;}
+.imgspc7{padding:20px;}
+.imgspc8{padding:20px;}
+.imgspc9{padding:20px; display:none;}
+
 
  /*button setting*/
  .button {

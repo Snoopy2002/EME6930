@@ -7,7 +7,7 @@
     <title>Welcome to International Schools USA</title> <!--This loads the appropriate style sheets accoding to screen size-->
 	  <link rel="stylesheet" type="text/css" href="international.css">
     
-	  <!--Google Font Additions-->
+	  <!--Google Font Additions, not used for this page-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
 
 <script>
+<!--function to handle getting school information by clicking buttons on page-->
 function schoolinfo(id) {
     var elem = document.getElementsByClassName("column-3 box");
 	switch(id)
@@ -41,6 +42,7 @@ function schoolinfo(id) {
     }
  }<!--end fn-->
  
+ <!--function to process the pulldown box and display school information-->
  function schoolinfo2() {
        
 	   
@@ -84,7 +86,7 @@ function schoolinfo(id) {
 
 
   
-<div class="container">
+<div class="container"> <!--form for student info, displayed as PHP-->
    <center>   
    <div class="column-1 box">
 	  <h3>On the following form please enter the requested information for your child.</h3><br>
@@ -103,7 +105,7 @@ function schoolinfo(id) {
       </form>
 	  <br>
 	  
-	  <form>
+	  <form> <!--form to display school info-->
         <H3>Select the school for which you want to add your child to the wait list. Buttons below provide more information on each of our schools.</H3><br>
       <select id="schoolchoice">
         <option value="0">ABC K-5</option>
@@ -118,7 +120,7 @@ function schoolinfo(id) {
 	 
    </div> <!--end box 1-->
 	  
-      <div class="column-2 box">
+      <div class="column-2 box"> <!--buttons to display school info-->
 	    <H3>Information on our schools</H3><br>
 	    <button class="button0" onclick="schoolinfo(0)">ABC K-5</button>
         <button class="button0" onclick="schoolinfo(1)">ABC 6-8</button>
