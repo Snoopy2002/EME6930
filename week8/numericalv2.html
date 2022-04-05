@@ -32,14 +32,14 @@
 	   this.trapezoidal = trap;
 	}
 	
-	function WriteObjects()  //for writing calculations to console and an external file
+	function WriteObjects()  //for writing calculations to console 
 	{
 	  len_integralobjects = integralobjects.length;
 
 	  
-	   for (var i=0; i < len_integralobjects; i++) //writes out calculations to the console and an external text file
+	   for (var i=0; i < len_integralobjects; i++) //writes out calculations to the console
        {
-         console.log(JSON.stringify(integralobjects[i])); //writes out calculations to log
+         console.log(JSON.stringify(integralobjects[i])); 
         }
 	
 	}
@@ -148,15 +148,15 @@
 	  
    </div> <!--end box 1-->
 	  
-      <div class="column-2 box">
+      <div class="column-2 box">  <!--outputs of y values of integral-->
 	  <H3> &nbspy-values are: </H3>
 	   
 	  </div> <!--end box 2-->
-	  <div class="column-2b box">
+	  <div class="column-2b box">  <!--will be used for Desmos graph-->
 	  <H3>&nbspDesmos Graph</H3>
 	  
 	  </div>
-	  <div class="column-3 box">
+	  <div class="column-3 box">  <!--Integral calculation outputs-->
 	  <H3>&nbspTotal of the integral is: </H3>
 	  
 	  </div>
