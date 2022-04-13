@@ -17,6 +17,18 @@
 	 
 	 //src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6";
 	 
+	 function compute_sample()
+	 {
+	   	var element = document.getElementsByClassName("column-1a box");
+		var b=24;
+		var a=0;
+		var n=6;
+		var integ = 0.5*(b-a)/n*(9.6+2*10.3+2*10.9+2*11.1+2*10.9+2*10.5+9.6);
+        var htmltoinsert="<H4>"+"    Results for above table are   Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  integral is: " + integ + "<n/>"+"</H4>";
+	    element[0].insertAdjacentHTML('beforeend',htmltoinsert) ;
+
+	 }
+	 
 	 function cleardata() //resets all columns displaying data, and resets the array holding y values
 	 {
 		   var elem3 = document.getElementsByClassName("column-3 box");
@@ -123,14 +135,19 @@
 	    <h2>Numerical Integral Calculator using Trapezoidal Rule</h2>
     </div>
 
-
   
 <div class="container"> <!--data inputs for integral-->
    <center>   
+   
+   <div class="column-1a box">
+   	  <br><picture><img class="imgspc1" src="table.JPG"></picture><picture>
+	  <br><br>
+	  <input type="button" id="button1" value="Click for demo calculation" onclick="compute_sample();"></input>
+   </div>
+   
    <div class="column-1 box">
-      <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/a/riemann-sums-review" target="_blank">For further help on this topic click here</a><br>
-	  <br><picture><img class="imgspc1" src="trap.png" width="300" height="280"></picture>
-	  <h3>Enter the upper limit a, lower limit b, subdivisions n, and y-values of the function.</h3><br>
+           <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/a/riemann-sums-review" target="_blank">For further help on this topic click here</a><br>
+	  <h3>Enter the limits, subdivisions n, and y-values for any evenly spaced data table</h3><br>
 	    <label for="upperlimit"><b>Upper limit:</b></label>
         <input type="text" id="upperlimit" name="upperlimit" value="0"></input><br>
         <label for="lowerlimit"><b>Lower limit:</b></label>
