@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desmos Graph For Integral</title>
+
+<head>
+  <script src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+</head>
+<body>
+  <H2>Desmos Function Graph</H2>
+  <div id="calculator" style="width: 900px; height: 700px;"></div>
+
+  <script >
+    var elt = document.getElementById('calculator');
+    var calculator = Desmos.GraphingCalculator(elt);
+	var elements=sessionStorage.getItem('points-string');
+	calculator.setMathBounds({left: -20, right: 20, bottom: -20, top: 20});
+    calculator.setExpression({id:'graph1', latex:elements, dragMode:Desmos.DragModes.NONE, lineStyle:Desmos.Styles.DASHED});
+  </script>
+  
+</body>
+</html>

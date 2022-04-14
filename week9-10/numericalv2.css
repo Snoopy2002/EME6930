@@ -21,14 +21,14 @@ body { background-color:#000000; background: linear-gradient(to bottom, #000000,
 
 /* unvisited link */
 a:link {
-  color: red;
-  font-size:30px;
+  color: green;
+  font-size:20px;
   font-style:italic;
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: red;
 }
 
 /* mouse over link */
@@ -46,12 +46,12 @@ color:#92E6FD;
 h3{ /*h3 header settings*/
 font-family: Times, Verdana, serif;
 font-size:30px;
-color:#037E00;}
+color:#A90A0A;}
 
 h4{ /*h3 header settings*/
 font-family: Times, Verdana, serif;
 font-size:20px;
-color:#A500ED;}
+color:#1016EF;}
 
 
 .imgspc1{padding:10px; width:520px; height:320px;} /*image class for conditional loading of sample image or table*/
@@ -94,24 +94,25 @@ align=center;}*/
     
 .column-1{
   width: 100%;
-  height: 40% }
+  height: 60% }
     
 .column-2{ /*yvalue outputs*/
 width:100%;
-  height:30%;
+  height:20%;
  }
  
- .column-2b /*desmos graph element*/
- {
- width:100%;
- height: 20%;
-  }
+
   
  .column-3{ /*calculation output*/
  width:100%;
- height:10%; }
+ height:20%; }
  
-/*the flexbox settings*/
+ /*div
+ {
+  width:400px;
+  height:700px;
+ }*/
+ 
 .box {
   background-color: #E9E9EE; /*the flexbox color*/
   padding: 10px; /*flexbox padding*/

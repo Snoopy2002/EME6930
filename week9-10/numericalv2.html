@@ -7,26 +7,25 @@
     <title>Numerical Integral Calculator</title> <!--This loads the appropriate style sheets accoding to screen size-->
 	  <link rel="stylesheet" type="text/css" href="numericalv2.css">
 	  <link rel="stylesheet" type="text/css" href="numericalv2small.css" media="(max-width:1000px)">
-
 	  
- <script>
+<script>
      var x = 0;
      var array = Array(); //for the array of y values
 	 var integralobjects = []; //for the array of integral calculations
 	 var len_integralobjects; //length of this object array
+	 var arrayx = Array(); // for the array of x values
 	 
-	 //src="https://www.desmos.com/api/v1.6/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6";
 	 
-	 function compute_sample() //for display of the integral for example given for larger screen sizes (desktop/laptop)
+	 
+	function compute_sample() //for display of the integral for example given for larger screen sizes (desktop/laptop)
 	 {
 	   	var element = document.getElementsByClassName("column-1a box");
 		var b=24;
 		var a=0;
 		var n=6;
 		var integ = 0.5*(b-a)/n*(9.6+2*10.3+2*10.9+2*11.1+2*10.9+2*10.5+9.6);
-        var htmltoinsert="<H4>"+"    Results for above table are   Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  integral is: " + integ + "<n/>"+"</H4>";
-	    element[0].insertAdjacentHTML('beforeend',htmltoinsert) ;
-
+        var htmltoinsert="<H4>"+"    Results for above table are   Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  Integral is: " + integ + "<n/>"+"</H4>";
+	    element[0].insertAdjacentHTML('beforeend',htmltoinsert);
 	 }
 	 
 	 function cleardata() //resets all columns displaying data, and resets the array holding y values
@@ -37,6 +36,14 @@
             elem2[0].innerHTML="";
 		   x=0;	
            array=[];
+		   arrayx=[];
+		   document.getElementById("upperlimit").value=0;
+		   document.getElementById("lowerlimit").value=0;
+		   document.getElementById("subdivisions").value=0;
+		   document.getElementById("xvals").value=0;
+		   document.getElementById("yvalues").value=0;
+
+		   
      }
     
 	function NumericIntegral(leftsum, rightsum, trap) //calculates numeric integral
@@ -61,17 +68,25 @@
 	
     function add_element_to_array() //adds elements to array
     {
-	 array[x] = document.getElementById("yvalues").value;
- 	 alert("Element: " + array[x] + " Added at index " + x);
+	 arrayx[x]=document.getElementById("xvals").value; //gets x value from box
+	 array[x] = document.getElementById("yvalues").value; //gets y value from box
+ 	 alert("Element: " + arrayx[x] + " Added at x-index " + x + " Element: " + array[x] + " Added at y-index " + x);
  	 x++;
-     document.getElementById("yvalues").value = "";
+	 document.getElementById("xvals").value = ""; //clear the box
+     document.getElementById("yvalues").value = ""; //clear th box
     } 
 	
 	function DrawGraph() //to draw desmos graph in the column 2b box, the third box on the webpage
 	{
-	    var element = document.getElementsByClassName("column-2b box");
-        var calculator = Desmos.GraphingCalculator(element);
-        calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
+	      var ps="";
+		  for (var k=0; k < array.length; k++)
+		     ps+="("+arrayx[k]+","+array[k]+")"+","; //create string of points to graph
+		  newps=ps.slice(0,-1); //remove last comma to prevent errors assign to new variable
+		  console.log(ps);//debugging
+		  sessionStorage.setItem("points-string", newps); //save string to session storage for plotting
+		  //window.open("https://snoopy2002.github.io/EME6930/week9-10/numericalv2.html");
+		  window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph
+          alert("DESMOS GRAPH IN SEPARATE TAB!");
 	}
 
 	function display_and_calculate() //shows numerical results in box 2 and box 3
@@ -85,15 +100,17 @@
 	   var aelement = document.getElementById("lowerlimit");
 	   var belement = document.getElementById("upperlimit");
 	   var nelement = document.getElementById("subdivisions");
-	   var a = aelement.value;
-	   var b = belement.value;
-	   var n = nelement.value;
+	   var a = aelement.value; //lower limit
+	   var b = belement.value; //upper limit
+	   var n = nelement.value; //subdivisions
 	   var deltax=0;
     
-       for (var y=0; y<array.length; y++) <!--displays the y values of the function-->
+       for (var y=0; y<array.length; y++) <!--displays the x and y values of the function-->
 	    {
-       e += "y value " + y + " = " + array[y] + "<br/>";
+       e += "x value: " + y + " = " + arrayx[y] + " y value: " + y + " = " + array[y] + "<br/>";
 	      }
+		  
+		
 		  
      elem[0].innerHTML = e;
      deltax=(parseFloat(b)-parseFloat(a))/parseFloat(n);
@@ -119,13 +136,14 @@
 	trapezoidal=trapezoidal*deltax*0.5;
     elem2[0].innerHTML=" Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  left sum: " + lefttotal + "  right sum: " + righttotal + "  trapezoidal: " + trapezoidal + "<n/>";
     <!--above line displays the limits, subdivisions and the sums-->
-   
    var integral = new NumericIntegral(lefttotal, righttotal,trapezoidal); //create an integral calculation object
    integralobjects.push(integral); //put this object into array of objects
  } <!--end function-->
 
 </script>
 
+	  
+ 
 </head>
 <body>
 
@@ -140,23 +158,25 @@
    <center>   
    
    <div class="column-1a box"> <!--demo calculation flexbox-->
+      <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/a/riemann-sums-review" target="_blank">For further help on this topic click here</a><br>
    	  <br><picture><img class="imgspc1" src="table.jpg"></picture><picture>
 	  <br><br>
 	  <input type="button" id="button1" value="Click for demo calculation" onclick="compute_sample();"></input>
    </div>
    
    <div class="column-1 box"> <!--flexbox for input of data-->
-           <a href="https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-2/a/riemann-sums-review" target="_blank">For further help on this topic click here</a><br>
 	  <h3>Enter the limits, subdivisions n, and y-values for any evenly spaced data table</h3><br>
 	    <label for="upperlimit"><b>Upper limit:</b></label>
         <input type="text" id="upperlimit" name="upperlimit" value="0"></input><br>
         <label for="lowerlimit"><b>Lower limit:</b></label>
         <input type="text" id="lowerlimit" name="lowerlimit" value="0"></input><br>
 		<label for="subdivisions"><b>Number of subdivisions:</b></label>
-        <input type="text" id="subdivisions" name="subdivisions" value="0"></input><br>
-        <label for="yvalues"><b>yvalues of function:</b></label>
+		<input type="text" id="subdivisions" name="subdivisions" value="0"></input><br>
+        <label for="xvalues"><b>x values of function:</b></label>
+        <input type="text" id="xvals"></input><br>
+        <label for="yvalues"><b>y values of function:</b></label>
         <input type="text" id="yvalues"></input>
-        <input type="button" id="button1" value="Click to add a y-value." onclick="add_element_to_array();"></input></br></br> <!--input array-->
+        <input type="button" id="button1" value="Click to add x and y-value." onclick="add_element_to_array();"></input></br></br> <!--input array-->
 		
         <p class="p2">Press after entering each set of y values to show the results in the page below:</p><input type="button" id="button2" value="Display values and calculate integral" onclick="display_and_calculate();"></input> <!--input limits and divisions-->
 		<p class="p2">Press before entering a new set of y values to clear the array:</p><input type="button" id="button3" value="Clear" onclick="cleardata();"></input><br> <!--clear form-->
@@ -171,25 +191,28 @@
 	  <H3> &nbspy-values are: </H3>
 	   
 	  </div> <!--end box 2-->
-	  <div class="column-2b box">  <!--will be used for Desmos graph-->
-	  <H3>&nbspDesmos Graph</H3>
 	  
-	  </div>
 	  <div class="column-3 box">  <!--Integral calculation outputs-->
 	  <H3>&nbspTotal of the integral is: </H3>
 	  
 	  </div>
 	  </center>
 	  
+	  <!--<div id="DesmosBox">  
+        	  
+	  </div>-->
 	  
   
 </div>
 
 <footer>
   <center>
-  Author: Giancarlo Fruzzetti 4/2022
-  <a href="mailto:gfruzzetti@usf.edu">My email</a>
+  Author: Giancarlo Fruzzetti 4/2022<br>
+  University of S. Florida and St Joseph's Academy
   </center>
 </footer>
+
+
+
   </body>
 </html>
