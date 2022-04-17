@@ -224,7 +224,7 @@
 	  
   
 </div>
-
+<p id="dt" align=center></p>
 <footer>
   <center>
   Author: Giancarlo Fruzzetti 4/2022<br>
@@ -232,7 +232,10 @@
   </center>
 </footer>
 
-
+<script>
+var dt = new Date();
+document.getElementById("dt").innerHTML = dt.toLocaleString(); //for putting date and time on the page
+</script>
 
   </body>
 </html>
