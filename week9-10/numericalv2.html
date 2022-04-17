@@ -23,9 +23,21 @@
 		var b=24;
 		var a=0;
 		var n=6;
+		var xar=[0,4,8,12,16,20,24];
+		var yar=[9.6,10.3,10.9,11.1,10.9,10.5,9.6]
 		var integ = 0.5*(b-a)/n*(9.6+2*10.3+2*10.9+2*11.1+2*10.9+2*10.5+9.6);
         var htmltoinsert="<H4>"+"    Results for above table are   Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  Integral is: " + integ + "<n/>"+"</H4>";
 	    element[0].insertAdjacentHTML('beforeend',htmltoinsert);
+		
+		var ps=""; //initialize points string
+		for (var k=0; k < yar.length; k++)
+	         ps+="("+xar[k]+","+yar[k]+")"+","; //create string of points to graph
+		newps=ps.slice(0,-1); //remove last comma to prevent errors assign to new variable
+		  //console.log(ps);//debugging
+		sessionStorage.setItem("points-string", newps); //save string to session storage for plotting
+		  //window.open("https://snoopy2002.github.io/EME6930/week9-10/numericalv2.html");
+		window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph, needs to correspond with server pathname
+        alert("DESMOS GRAPH IN SEPARATE TAB!");
 	 }
 	 
 	 function cleardata() //resets all columns displaying data, and resets the array holding y values
@@ -46,8 +58,11 @@
 		   
      }
     
-	function NumericIntegral(leftsum, rightsum, trap) //calculates numeric integral
+	function NumericIntegral(upperlimit,lowerlimit, divisions, leftsum, rightsum, trap) //numeric integral object
 	{
+	   this.upper=upperlimit;
+	   this.lower=lowerlimit;
+	   this.divs=divisions;
 	   this.left = leftsum;
 	   this.right = rightsum;
 	   this.trapezoidal = trap;
@@ -60,8 +75,9 @@
 	  
 	   for (var i=0; i < len_integralobjects; i++) //writes out calculations to the console
        {
-         console.log(JSON.stringify(integralobjects[i])); 
-        }
+         data=JSON.stringify(integralobjects[i]);
+		 console.log(data); 
+        }//end for
 	
 	}
 	
@@ -78,14 +94,14 @@
 	
 	function DrawGraph() //to draw desmos graph in the column 2b box, the third box on the webpage
 	{
-	      var ps="";
+	      var ps=""; //initialize points string
 		  for (var k=0; k < array.length; k++)
 		     ps+="("+arrayx[k]+","+array[k]+")"+","; //create string of points to graph
 		  newps=ps.slice(0,-1); //remove last comma to prevent errors assign to new variable
-		  console.log(ps);//debugging
+		  //console.log(ps);//debugging
 		  sessionStorage.setItem("points-string", newps); //save string to session storage for plotting
-		  //window.open("https://snoopy2002.github.io/EME6930/week9-10/numericalv2.html");
-		  window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph
+		  window.open("https://snoopy2002.github.io/EME6930/week9-10/numericalv2.html");
+		  //window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph, needs to correspond with server pathname
           alert("DESMOS GRAPH IN SEPARATE TAB!");
 	}
 
@@ -104,6 +120,7 @@
 	   var b = belement.value; //upper limit
 	   var n = nelement.value; //subdivisions
 	   var deltax=0;
+	   
     
        for (var y=0; y<array.length; y++) <!--displays the x and y values of the function-->
 	    {
@@ -136,8 +153,11 @@
 	trapezoidal=trapezoidal*deltax*0.5;
     elem2[0].innerHTML=" Lower limit:  " + a + " Upperlimit:  " + b + "  Subdivisions: " + n + "  left sum: " + lefttotal + "  right sum: " + righttotal + "  trapezoidal: " + trapezoidal + "<n/>";
     <!--above line displays the limits, subdivisions and the sums-->
-   var integral = new NumericIntegral(lefttotal, righttotal,trapezoidal); //create an integral calculation object
+   var integral = new NumericIntegral(a,b,n,lefttotal, righttotal,trapezoidal); //create an integral calculation object
    integralobjects.push(integral); //put this object into array of objects
+   
+   
+   
  } <!--end function-->
 
 </script>
@@ -171,17 +191,17 @@
         <label for="lowerlimit"><b>Lower limit:</b></label>
         <input type="text" id="lowerlimit" name="lowerlimit" value="0"></input><br>
 		<label for="subdivisions"><b>Number of subdivisions:</b></label>
-		<input type="text" id="subdivisions" name="subdivisions" value="0"></input><br>
+		<input type="text" id="subdivisions" name="subdivisions" value="0"></input><br><br
         <label for="xvalues"><b>x values of function:</b></label>
         <input type="text" id="xvals"></input><br>
         <label for="yvalues"><b>y values of function:</b></label>
-        <input type="text" id="yvalues"></input>
+        <input type="text" id="yvalues"></input>&nbsp&nbsp&nbsp
         <input type="button" id="button1" value="Click to add x and y-value." onclick="add_element_to_array();"></input></br></br> <!--input array-->
 		
         <p class="p2">Press after entering each set of y values to show the results in the page below:</p><input type="button" id="button2" value="Display values and calculate integral" onclick="display_and_calculate();"></input> <!--input limits and divisions-->
 		<p class="p2">Press before entering a new set of y values to clear the array:</p><input type="button" id="button3" value="Clear" onclick="cleardata();"></input><br> <!--clear form-->
 		<p class="p2">Write out multiple integral calculations to console, press then CTRL-SHIFT-I to view them:</p><input type="button" id="button4" value="Write Out Calculations to Console" onclick="WriteObjects();"></input><br><!--write out the array of calculation objects to console-->
-	    <p class="p2">Draws Desmos graph of your datapoints:</p><input type="button" id="button5" value="Draw Graph" onclick="DrawGraph();"></input><br><!--write out the array of calculation objects to console-->
+	    <p class="p2">Draws Desmos graph of your datapoints in separate window:</p><input type="button" id="button5" value="Draw Graph" onclick="DrawGraph();"></input><br><!--write out the array of calculation objects to console-->
  
 	  <br>
 	  

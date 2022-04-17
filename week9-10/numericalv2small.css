@@ -1,7 +1,7 @@
 /*main css file for large screen sizes*/
 
 html, body { min-height: 100% } /*body settings*/
-body { background-color:#000000; background: linear-gradient(to bottom, #000000, #FFFFFF); background-repeat: repeat; padding:0;  margin: 20px auto;  /* max-width: 1300px;*/
+body { background-color:#4A0282; background: linear-gradient(to bottom, #4A0282, #FFFFFF); background-repeat: repeat; padding:0;  margin: 20px auto;  /* max-width: 1300px;*/
 }
 
 #root {
@@ -37,19 +37,26 @@ a:hover {
 }
 
 h2{ /*h2 heading settings*/
-font-family:  Times, Verdana, serif;
-font-size:25px;
+font-family:  Helvetica, Georgia, serif;
+font-size:20px;
 align:center;
-color:#D96D2B;
+color:#FFFFFF;
 }
 
 h3{ /*h3 header settings*/
+font-family: Helvetica, Georgia, serif;
+font-size:20px;
+color:#4A0282;}
+
+
+h4{ /*h3 header settings*/
 font-family: Times, Verdana, serif;
 font-size:20px;
-color:#138160;}
+color:#4A0282;}
+
 
 .p1{padding-top:5px; padding-bottom:5px; font-size:25px; color:#71A57B; font-weight:bolder; }
-.p2{padding-top:5px; padding-bottom:5px; font-size:16px; color:#138160; font-weight:bolder; }
+.p2{padding-top:5px; padding-bottom:5px; font-size:16px; color:#4A0282; font-weight:bolder; }
 
 
 .imgspc1{padding:10px; display:none;} /*image class for conditional loading of sample image or table*/
@@ -59,7 +66,7 @@ color:#138160;}
   display: flex;
   flex-direction:column;
   flex-wrap:wrap;
-  width: 100%;
+  width: 96%;
   padding:10px;
   justify-content:space-between;
 
@@ -93,7 +100,7 @@ width:100%;
  
 /*the flexbox settings*/
 .box {
-  background-color: #FBF8F0; /*the flexbox color*/
+  background-color: #E1E0E1; /*the flexbox color*/
   padding: 10px; /*flexbox padding*/
   border-radius: 20px; /*roundness of corners*/
   border: 2px solid black; /*size of border and oclor*/

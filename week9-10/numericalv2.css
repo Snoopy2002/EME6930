@@ -51,10 +51,10 @@ color:#A90A0A;}
 h4{ /*h3 header settings*/
 font-family: Times, Verdana, serif;
 font-size:20px;
-color:#1016EF;}
+color:#0BB6DC;}
 
 
-.imgspc1{padding:10px; width:520px; height:320px;} /*image class for conditional loading of sample image or table*/
+.imgspc1{padding:10px; width:620px; height:320px;} /*image class for conditional loading of sample image or table*/
 
 
 .p1{padding-top:5px; padding-bottom:5px; font-size:30px; color:#444444; font-weight:bolder; }
@@ -79,7 +79,7 @@ align=center;}*/
   display: flex;
   flex-direction:column;
   flex-wrap:wrap;
-  width: 100%;
+  width: 96%;
   padding:10px;
   justify-content:space-between;
 
