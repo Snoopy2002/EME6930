@@ -100,6 +100,20 @@
 		  newps=ps.slice(0,-1); //remove last comma to prevent errors assign to new variable
 		  //console.log(ps);//debugging
 		  sessionStorage.setItem("points-string", newps); //save string to session storage for plotting
+		  if(arrayx.length > 0) //for setting limits of the Desmos graph
+		  {
+		    sessionStorage.setItem("xlower", arrayx[0];
+			sessionStorage.setItem("xupper", arrayx[arrayx.length-1];
+			sessionStorage.setItem("ylower", array[0];
+			sessionStorage.setItem("yupper", array[array.length-1];
+		   }
+		   else
+		   {
+		   sessionStorage.setItem("xlower", -10);
+		   sessionStorage.setItem("xupper", 10);
+		   sessionStorage.setItem("yupper",10);
+		   sessionStorage.setItem("ylower", -10);
+		    }
 		  window.open("https://snoopy2002.github.io/EME6930/week9-10/desmos.html");
 		  //window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph, needs to correspond with server pathname
           alert("DESMOS GRAPH IN SEPARATE TAB!");

@@ -15,8 +15,12 @@
     var elt = document.getElementById('calculator'); //sets the calculator object to display graph
     var calculator = Desmos.GraphingCalculator(elt);
 	var elements=sessionStorage.getItem('points-string');
-	calculator.setMathBounds({left: -20, right: 20, bottom: -20, top: 20});
-    calculator.setExpression({id:'graph1', latex:elements, dragMode:Desmos.DragModes.NONE, lineStyle:Desmos.Styles.DASHED});
+	var xupper=sessionStorage.getItem('xupper');
+	var xlower=sessionStorage.getItem('xlower');
+	var yupper=sessionStorage.getItem('ylower');
+	var ylower=sessionStorage.getItem('yupper');
+	calculator.setMathBounds({left: xlower, right: xupper, bottom: ylower, top: yupper});
+    calculator.setExpression({id:'graph1', latex:elements, lineStyle:Desmos.Styles.DASHED});
   </script>
   
 </body>
