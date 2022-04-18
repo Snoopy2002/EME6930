@@ -15,11 +15,11 @@
     var elt = document.getElementById('calculator'); //sets the calculator object to display graph
     var calculator = Desmos.GraphingCalculator(elt);
 	var elements=sessionStorage.getItem('points-string');
-	var xupper=sessionStorage.getItem('xupper');
+	/*var xupper=sessionStorage.getItem('xupper');
 	var xlower=sessionStorage.getItem('xlower');
 	var yupper=sessionStorage.getItem('ylower');
-	var ylower=sessionStorage.getItem('yupper');
-	calculator.setMathBounds({left: xlower, right: xupper, bottom: ylower, top: yupper});
+	var ylower=sessionStorage.getItem('yupper');*/
+	calculator.setMathBounds({left: -40, right: 40, bottom: -40, top: 40});
     calculator.setExpression({id:'graph1', latex:elements, lineStyle:Desmos.Styles.DASHED});
   </script>
   
