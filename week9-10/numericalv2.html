@@ -34,7 +34,7 @@
 	         ps+="("+xar[k]+","+yar[k]+")"+","; //create string of points to graph
 		newps=ps.slice(0,-1); //remove last comma to prevent errors assign to new variable
 		  //console.log(ps);//debugging
-		sessionStorage.setItem("points-string", newps); //save string to session storage for plotting
+		sessionStorage.setItem("points-string", newps); //save string to session storage for plotting on desmos page
 		window.open("https://snoopy2002.github.io/EME6930/week9-10/desmos.html");
 		//window.open("X:/USF%20Instructional%20Tech%20MS%20Courses/EME%206930%20Web%20Programming/week9-10/desmos.html"); //opens new window with desmos graph, needs to correspond with server pathname
         alert("DESMOS GRAPH IN SEPARATE TAB!");
