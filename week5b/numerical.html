@@ -59,7 +59,7 @@
 		righttotal=righttotal*deltax;
 	for (let i = 0; i < array.length; i++) 
 	{<!--calculates trapezoidal sum--> 
-	     if (i==0 || i==array.length)
+	     if (i==0 || i==array.length-1)
 		 {trapezoidal += parseFloat(array[i]);} <!--xi-->
 		 else
 		  {trapezoidal += 2*parseFloat(array[i]);} <!--2*xi-->

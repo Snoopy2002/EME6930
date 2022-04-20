@@ -29,14 +29,12 @@
 		  <div><button class="button1" onclick="window.open('https://snoopy2002.github.io/EME6930/week6/course-selector.html','_blank')">Week 6 Course Selector with Classes</button></div>
 		  <div><button class="button1" onclick="window.open('https://snoopy2002.github.io/EME6930/week7/course-selector-v2.html','_blank')">Week 7 Course Selector with Constructor and Arrays of Objects</button></div>
 		  <div><button class="button1" onclick="window.open('https://snoopy2002.github.io/EME6930/week8/numericalv2.html','_blank')">Week 8 Improved Numerical Integration Calculator</button></div>
-		  <div><button class="button1" onclick="window.location.href='';">Week 9</button></div>
-		  <div><button class="button1" onclick="window.location.href='';">Week 10</button></div>
-		  <div><button class="button1" onclick="window.location.href='';">Final Project</button></div>
+		  <div><button class="button1" onclick="window.location.href='https://snoopy2002.github.io/EME6930/week9-10/numericalv2.html';">Final Project Numerical Integration Calculator with Desmos Graphing</button></div>
 
         </div>
       </div>
       <div id = "column-2"> <!--center column items -->
-        <img src="me2.jpg" alt="Giancarlo Fruzzetti and Dog">
+        <img src="mitzi&me.jpg" alt="Giancarlo Fruzzetti and Dog">
       </div>
 	  
 	  <div id = "column-4"> <!--center column items-->
@@ -63,8 +61,9 @@
 		  <div><button class="button1" onclick="window.open('https://www.geeksforgeeks.org/how-to-append-html-code-to-a-div-using-javascript/','_blank')">Adding code in a html div using Javascript</button></div>
 		  <div><button class="button1" onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random','_blank')">Get random integer between 2 values.</button></div>
 		  <div><button class="button1" onclick="window.open('https://stackoverflow.com/questions/41839162/how-to-get-number-values-from-an-html-form-using-javascript','_blank')">JS get numbers from form</button></div>
-		  <div><button class="button1" onclick="window.open('https://www.desmos.com/api/v1.6/docs/index.html#document-quickstart','_blank')">Using the Desmos API</button></div>
 		  <div><button class="button1" onclick="window.open('https://lage.us/Javascript-Pass-Variables-to-Another-Page.html#:~:text=There%20are%20two%20ways%20to,query%20string%20with%20the%20URL.','_blank')">Passing input to another page with js</button></div>
+		  <div><button class="button1" onclick="window.open('https://www.desmos.com/api/v1.6/docs/index.html#document-api-keys','_blank')">Desmos API Documentation</button></div>
+		  <div><button class="button1" onclick="window.open('https://www.w3schools.com/php/php_form_complete.asp','_blank')">PHP Form Example</button></div>
 
         
         </div>
@@ -74,10 +73,17 @@
 	  
     </div>
 </div>
-<footer><br>
+<p id="dt" align=center></p>
+
+<footer>
 	<center>Copyright 2022, <a style="color:black" href="https://collectibletoysandcars.wordpress.com/" target="_blank">Giancarlo Fruzzetti</a></center>
 </footer>  <br>
- 
+
+<script>
+var dt = new Date();
+document.getElementById("dt").innerHTML = dt.toLocaleString(); //for putting date and time on the page
+</script>
+
 </body>
 
 </html>

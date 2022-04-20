@@ -51,9 +51,9 @@ p {
 }
 
 img {
-     position:relative;
-     height:270px;
-     width: 100%;
+     position:center;
+     height:280px;
+     width: 104%;
   }
 /*containers and the flexbox formats*/
 #container {
